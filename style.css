@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    border: none;
+    font-weight: 300;
+}
+.menu{
+    background-color: #2c3e50;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 998;
+    left:-100%;
+    transition: all 500ms;
+}
+.toggle-icons{
+    height: 0px;
+}
+.menu-toggle{
+    padding: 20px;
+}
+.checkbox{
+    position: absolute;
+    left: -100%;
+}
+.menuOn{
+    left: 0%;
+    transition: all 500ms;
+}
+.toggleOff{
+    width: 0%;
+    left:-100%;
+    position: absolute;
+}
+.toggle{
+    position:absolute;
+    font-size: 40px;
+}
+.toggle i{
+    font-size: 40px;
+    color: rgba(44, 62, 80,1.0);
+    z-index: 400;
+    cursor: pointer;
+}
+.close>a>i{
+    color: white;
+    font-size: 50px;
+    position:absolute;
+    z-index: 999;
+    padding: 15px;
+    right: 15px;
+    top: 15px;
+    transition: background 500ms;
+}
+.close>a>i:hover{
+    background-color: #f1c40f;
+    border-radius: 3px;
+    color:#2c3e50 ;
+    transition: all 500ms;
+
+}
+
+.logo{
+    padding: 15px;
+    border-bottom: 3px solid #1b2631;
+}
+.logo>p{
+    font-size: 75px;
+    color: white;
+}
+.logo>p>span{
+    color: white;
+    font-weight: 500;
+    font-size: 75px;
+}
+.social>a>i{
+    color: white;
+    padding: 15px;;
+    transition: background 500ms;
+}
+.social>a>i:hover{
+    color: #2c3e50;
+    background-color: #f1c40f;
+    border-radius: 3px;
+    transform: all 500ms;
+}
+
+
+.content{
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    text-align: center;
+}
+.content>ul>li{
+float: none;
+}
+.content>ul>li>a{
+    line-height: 50px;
+    float: left;
+    font-size: 40px;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    border-bottom: 1px solid rgba(34, 48, 61, 0.445);
+    width: 100%;
+    transition: border 500ms;
+
+
+}
+.content>ul>li>a>i{
+    margin-right: 20px;
+    font-size: 40px;
+    color: white;
+
+}
+
+.content>ul>li>a:hover{
+    border-bottom: 1px solid #fff;
+    background-color: #f1c40f;
+    transition: all 500ms;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+}
